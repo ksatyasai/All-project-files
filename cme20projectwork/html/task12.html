@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<style type="text/css">
+		img{
+			height:630px;
+			width:1350px;
+			 background-repeat: no-repeat;
+  background-size: cover;
+			filter: blur(20px);
+		}
+		.div{
+			 height:560px;
+			 width:430px;
+			 border:1px solid white;
+			 position:absolute;
+			 margin-top:-600px;
+			 margin-left:460px;
+			 box-shadow: 10px 10px 0px 0px;
+		}
+		h1{
+		   margin-left:170px;
+		   margin-top:-0.5px;
+		}
+		.last,.date,.email,.password,.check,.phone,.confirm{
+			   margin-left:20px;
+			   font-size:18px;
+			   margin-top:-10px;
+		}
+		.first{
+			   margin-left:20px;
+			   font-size:18px;
+		}
+		.input{
+			  margin-left:160px;
+			  position:absolute;
+			  margin-top:-40px;
+			  height:20px;
+			  width:220px;
+		}
+		.gender{
+			    margin-left:20px;
+			   font-size:18px;
+			    margin-top:-10px;
+		}
+		.male{
+			  position:absolute;
+			  margin-top:-38px;
+			  margin-left:160px;
+		}
+		.button{
+			    margin-left:70px;
+			    height:30px;
+			    background-color:dodgerblue;
+			    color:white;
+			    font-size:15px;
+			    border:none;
+			    width:300px;
+		}
+		span{
+			 color:red;
+			 margin-top:-30px;
+			 margin-left:160px;
+			 position:absolute;
+			 font-size:12px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<img src="../images/images1/image11.jpg">
+	<div class="div">
+		<h1>Form</h1>
+		<hr>
+		<form onsubmit="return validations()" name="form">
+			<p class="first">First name:</p><input type="textarea" class="input" placeholder="Enter First Name" id="fname" onkeypress="document.getElementById('first').innerHTML='' " onclick="document.getElementById('first').innerHTML=''"><br>
+			<span id="first"></span>
+			<p class="last">Last name:</p><input type="textarea" class="input" placeholder="Enter last Name" id="lname" onkeypress="document.getElementById('last').innerHTML=''" onclick="document.getElementById('last').innerHTML=''"><br>
+			<span id="last"></span>
+			<p class="date">Date of birth:</p><input type="date" class="input" id="dob" onkeypress="document.getElementById('date').innerHTML=''" onclick="document.getElementById('date').innerHTML=''"><br>
+			<span id="date"></span>
+            <p class="email">Email:</p><input type="email" class="input" placeholder="Enter E-mail" id="mail" onkeypress="document.getElementById('email').innerHTML=''" onclick="document.getElementById('email').innerHTML=''"><br>
+            <span id="email"></span>
+            <p class="password">Password:</p><input type="password" class="input" placeholder="Password" id="pass" onkeypress="document.getElementById('password').innerHTML=''" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  onclick="document.getElementById('password').innerHTML=''"><br>
+            <span id="password"></span>
+            <p class="confirm">confirm password:</p><input type="password" class="input" placeholder="comfirm password"><br>
+            <span id="confirm"></span>
+            <p class="gender">Gender:</p><b class="male"><input type="radio" name="Gender" value="male" id="male">Male&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Gender" value="female" id="female">Female</b><br>
+            <span id="gender"></span>
+            <p class="check">Branch:</p><b class="male"><input type="checkbox">CME<input type="checkbox">ECE<input type="checkbox">EEE</b><br><span id="branch"></span>
+            <p class="phone">Phone no:</p><input type="tel" maxlength="10" class="input" placeholder="phone no" id="no" onkeypress="document.getElementById('phone').innerHTML=''"  onclick="document.getElementById('phone').innerHTML=''"><br>
+            <span id="phone"></span>
+            
+            <input type="submit" value="submit" class="button">
+       	</form>
+       	<script type="text/javascript">
+       		function validations()
+       		{
+              var first=document.getElementById('fname').value;
+              if(first=="")
+              {
+              	document.getElementById('first').innerHTML="*please fill the above box";
+              	return false;
+              }
+              var last=document.getElementById('lname').value;
+              if(last=="")
+              {
+              	document.getElementById('last').innerHTML="*please fill the above box";
+              	return false;
+              }
+              var date=document.getElementById('dob').value;
+              if(date=="")
+              {
+              	document.getElementById('date').innerHTML="*please fill the above box";
+              	return false;
+              }
+              var mail=document.getElementById('mail').value;
+              if(mail=="")
+              {
+              	document.getElementById('email').innerHTML="*please fill the above box";
+              	return false;
+              }
+              var pass=document.getElementById('pass').value;
+              if(pass=="")
+              {
+              	document.getElementById('password').innerHTML="*please fill the above box";
+              	return false;
+              }
+              // var male=document.getElementById('male').value;
+              // var female=document.getElementById('female').value;
+              if ( ( form.gender[0].checked == false ) && ( form.gender[1].checked == false ) )
+              {
+              	document.getElementById('gender').innerHTML="*please choose your gender";
+              	return false;
+              }
+              var phone=document.getElementById('no').value;
+              if(phone=="")
+              {
+              	document.getElementById('phone').innerHTML="*please fill the above box";
+              	return false;
+              }
+              alert("form has been submited...")
+       		}
+       	</script>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<!-- ***************array methods*************** -->
+<script type="text/javascript"> 
+    // let name=["naveen","sampath","satish"];
+    // name.push("ramesh");
+    // name.pop();
+    // name.shift();
+    // name.unshift("naveen");
+    // let array=name.map(function(element,index,totalarr)
+    // {
+    //  return "student:"+element;
+    // })
+    // console.log(array);
+    // let array=name.map(function(element,index,totalarr)
+    // {
+    //  return "index are"+index;
+    // })
+    // console.log(array);
+    // let array=name.map(function(element,index,totalarr)
+    // {
+    //  return "array is"+totalarr;
+    // })
+    // console.log(array);
+//********** task************//
+// let array=[{
+//             rollno:1,
+//             name:"ramesh",
+//             college:"adtp"
+//             },
+//             {
+//              rollno:2,
+//              name:"prasad",
+//              college:"adtp"
+//             },
+//             {
+//              rollno:2,
+//              name:"ram teja",
+//              college:"adtp"
+//             }
+//           ]
+//     // console.log(array);
+// let array1=array.map(function(element,index,array){
+//    return "Dear students:"+element.name;
+// })
+// console.log(array1);
+//*********** foreach method***********//
+// var salary=[40000,25000,30000];
+// console.log(salary);
+// salary.forEach(function(amount,index,array)
+// {
+//   var bonus=amount/10;
+//   console.log(bonus);
+//   array[index]=amount+bonus;
+// });
+// console.log(salary);
+//************* task *************//
+// var arr=[
+//          {
+//           name:"ramteja",
+//           salary:25000,
+//           college:"aec"
+//          },
+//          {
+//           name:"ramesh",
+//           salary:30000,
+//           college:"ace"
+//          },
+//          {
+//           name:"prasad",
+//           salary:40000,
+//           college:"aeoc"
+//          }
+//         ];
+// console.log(arr);
+// arr.forEach(function(amount,index,array)
+// {
+//  var bonus=amount.salary/10;
+//  // console.log(bonus);
+//  amount["salary"]=amount.salary+bonus; 
+// amount["college"]=amount.college+"college";
+// });
+//  console.log(arr);
+//************ find method*************//
+// let array=["ramteja","prasad","jayaram"];
+// var a=array.find(function(a,index,arr)
+// {
+//  return a.startsWith("j");
+// })
+// console.log(a);
+ </script> 
+<!-- //************ task************// -->
+<!-- <input type="text" id="input">
+<button onclick="sum()">search</button>
+<p id="para"></p>
+<script type="text/javascript">
+    function sum()
+    {
+  var text=document.getElementById('input').value;
+  var array=["naveen","sampath","ramesh","prasad","ramteja"];
+    var arr=array.find(function(a,index,array)
+      {
+        return a.startsWith(text);
+      });
+    if(text=="" || arr==undefined)
+    {
+    document.getElementById("para").innerHTML="no data found"; 
+    }
+    else{
+    document.getElementById("para").innerHTML=arr;
+    }
+    }
+</script> -->
+<!-- ************* filter method ********* -->
+<!-- <script type="text/javascript">
+    let array=["naveen","ramteja","sampath","naveen"];
+    let output=array.filter(function(ele)
+    {
+        return ele=="naveen";
+    })
+    console.log(array);
+    console.log(output);
+</script> -->
+<!-- ************ task *********** -->
+<!-- <script type="text/javascript">
+    let array=[
+               {
+                rollno:1,
+                college:"aec"
+               },
+               {
+                rollno:2,
+                college:"acoe"
+               },
+               {
+                rollno:3,
+                college:"acet"
+               },
+               {
+                rollno:4,
+                college:"aec"
+               }
+              ];
+    console.log(array);
+    let output=array.filter(function(ele,index,arr)
+    {
+        return ele.college=="aec";
+    })
+    console.log(output);
+</script> -->
+<!-- ************ task************ -->
+<!-- <table border="1" id="r1">
+    <tr>
+        <th>rollno</th>
+        <th>college</th>
+    </tr>
+</table>
+<script type="text/javascript">
+    let array=[
+               {
+                rollno:1234,
+                college:"AEC"
+               },
+               {
+                rollno:1235,
+                college:"AEC"
+               },
+               {
+                rollno:1236,
+                college:"ACOE"
+               },
+               {
+                rollno:1237,
+                college:"ACET"
+               },
+               {
+                rollno:1238,
+                college:"AEC"
+               }
+              ];
+    let output=array.filter(function(ele)
+    {
+        return ele.college=="AEC";
+    })
+    // for(i=0;i<output.length;i++)
+    // {
+    //  document.getElementById("r1").innerHTML+="<tr><td>"+output[i].rollno+"</td><td>"+output[i].college+"</tr></td>";   
+    // }
+    //********** or second method************
+    output.forEach(function(ele)
+    {
+     document.getElementById("r1").innerHTML+="<tr><td>"+ele.rollno+"</td><td>"+ele.college+"</tr></td>";
+    })
+</script> -->
+<!-- **************** task *********************** -->
+<!-- ol id="demo">
+</ol>
+<script type="text/javascript">
+    let array=[
+               {
+                rollno:1234,
+                college:"AEC"
+               },
+               {
+                rollno:1235,
+                college:"AEC"
+               },
+               {
+                rollno:1236,
+                college:"ACOE"
+               },
+               {
+                rollno:1237,
+                college:"ACET"
+               },
+               {
+                rollno:1238,
+                college:"AEC"
+               }
+              ];
+    let output=array.filter(function(ele)
+    {
+        return ele.college=="AEC";
+    })
+    console.log(output);
+output.forEach(function(ele)
+{
+  document.getElementById('demo').innerHTML+="<li><u><b>Record</b></u><br>"+ele.rollno+"<br>"+ele.college+"</li>";
+})
+</script> -->
+<!-- **************** task *********************** -->
+<!-- <div>
+    <p id="record"></p>
+</div>
+<script type="text/javascript">
+    let array=[
+               {
+                rollno:1234,
+                college:"AEC"
+               },
+               {
+                rollno:1235,
+                college:"AEC"
+               },
+               {
+                rollno:1236,
+                college:"ACOE"
+               },
+               {
+                rollno:1237,
+                college:"ACET"
+               },
+               {
+                rollno:1238,
+                college:"AEC"
+               }
+              ];
+    let output=array.filter(function(ele)
+    {
+        return ele.college=="AEC";
+    })
+    console.log(output);
+output.forEach(function(ele,index)
+{
+  document.getElementById('record').innerHTML+="<u><b><br>"+(index+1)+".Record</b></u><br>"+ele.rollno+"<br>"+ele.college;
+})
+</script> -->
+<!-- *************** some method********** -->
+<!-- <script type="text/javascript">
+    let array=["ramteja@gmail.com","ramesh@gmail.com","satish@gmail.com","prasad@gmail.com"];
+    console.log(array);
+    let mail=array.some(function(mail,index,array)
+    {
+        return mail=="satish@gmail.com";
+    })
+    console.log(mail);
+</script> -->
+<!-- **********task*********** -->
+<!-- <script type="text/javascript">
+    let array=[
+               {
+                rollno:1,
+                mail:"ramteja@gmail.com"
+               },
+               {
+                rollno:2,
+                mail:"satish@gmail.com"
+               },
+               {
+                rollno:3,
+                mail:"prasad@gmail.com"
+               }
+              ];
+    console.log(array);
+    let mail=array.some(function(ele)
+    {
+        return ele.mail=="prasad@gmail.com";
+    })
+    console.log(mail);
+</script> -->
+<!-- **************Every method********** -->
+<!-- <script>
+    let array=[50,60,70,80,41];
+    let check=array.every(function(ele)
+    {
+        return ele>40;
+    })
+    console.log(check);
+</script> -->
+<!-- *********** task********** -->
+<!-- <script type="text/javascript">
+    let array=[ 
+               {
+                rollno:1,
+                percentage:60
+               },
+               {
+                rollno:2,
+                percentage:70
+               },
+               {
+                rollno:3,
+                percentage:80
+               },
+               {
+                rollno:4,
+                percentage:90
+               }
+              ];
+    console.log(array);
+    let percent=array.every(function(ele)
+    {
+        return ele.percentage>59;
+    })
+    console.log(percent);
+</script> -->
+<!-- *********task********** -->
+<!-- <input type="gmail" id="input" placeholder="Enter mail"><br>
+<p id="para"></p>
+<button onclick="sum()">check Email?</button>
+<script type="text/javascript">
+    let array=["ramteja@gmail.com","sampath@gmail.com","ramesh@gmail.com","prasad@gmail.com"];
+    
+    function sum()
+    {
+        let mail=document.getElementById('input').value;
+    let check=array.some( function(ele)
+    {
+        return ele==mail;
+    })
+    if(mail=="")
+    {
+     document.getElementById("para").innerHTML="Fill the above box";
+     document.getElementById("para").style="color:pink";   
+    }
+    if(check==true && mail!="")
+     {
+     document.getElementById("para").innerHTML="Email Already Exist";
+     document.getElementById("para").style="color:red";
+     }
+    if(check==false && mail!="")
+     {
+       document.getElementById("para").innerHTML="ok proceed"; 
+       document.getElementById("para").style="color:green";
+     }
+    }
+</script> -->
+<table border="1" id="tab">
+    <tr>
+        <th>Rollno</th>
+        <th>name</th>
+        <th>test1 marks</th>
+        <th>test2 marks</th>
+        <th>test3 marks</th>
+    </tr>
+</table>
+<script type="text/javascript">
+    let array=[
+               {
+                rno:1231,
+                name:"prasad",
+                test1:70,
+                test2:60,
+                test3:65
+               },
+               {
+                rno:1232,
+                name:"prasad",
+                test1:70,
+                test2:60,
+                test3:65
+               },
+               {
+                rno:1233,
+                name:"prasad",
+                test1:70,
+                test2:60,
+                test3:65
+               },
+               {
+                rno:1234,
+                name:"prasad",
+                test1:60,
+                test2:60,
+                test3:65
+               },
+               {
+                rno:1235,
+                name:"prasad",
+                test1:60,
+                test2:60,
+                test3:10
+               }
+              ];
+    let total=array.every(function(ele,index,array)
+    {
+      return ele.test1>=60 && ele.test2>=60 && ele.test3>=60;
+    })
+     if(total==true)
+    {
+    let arr=array.forEach(function(ele,index,array)
+    {
+     document.getElementById('tab').innerHTML+="<tr><td>"+ele.rno+"<br></td><td>"+ele.name+"<br></td><td>"+ele.test1+"<br></td><td>"+ele.test2+"<br></td><td>"+ele.test3+"<br></td></tr>";
+    })
+    }
+    console.log(total);
+    if(total==false)
+    {
+      let fill=array.filter(function(ele,index,array)
+      {
+        return ele.test1>=60 && ele.test2>=60 && ele.test3>=60;
+      })
+      console.log(fill)
+      fill.forEach(function(ele,index,array)
+      {
+       document.getElementById('tab').innerHTML+="<tr><td>"+ele.rno+"<br></td><td>"+ele.name+"<br></td><td>"+ele.test1+"<br></td><td>"+ele.test2+"<br></td><td>"+ele.test3+"<br></td></tr>"; 
+       })
+    }
+</script>
+</body>
+</html>

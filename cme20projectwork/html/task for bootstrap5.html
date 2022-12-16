@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		ul{
+		   list-style-type:none;
+		  }
+		img{
+			border:1px solid white;
+           }
+        b{
+          font-size:15px;
+        }
+        .admin{
+        	width:215px;
+        	background-color:SteelBlue;
+        	border-radius:0px;
+        	padding-top:10px;
+        	font-size:20px;
+        	color:white;
+              }
+        .dashboard{
+        	       height: 0px;
+        	     background-color:Cornflowerblue;
+        	     width:1130px;
+        	     border-radius:0px;
+        	     margin-left:-25px;
+        	     border:1px solid;
+                  }
+        .fa-envelope,.fa-bell,.fa-brands,.fa-sharp{
+        	     float:right;
+        	     margin-right:30px;
+        	     margin-top:20px;
+        }
+        .img-circle{
+        	        float:right;
+        	        margin-right:10px;
+        	        margin-top:10px;
+                   }
+        .name{
+        	 float: right;
+        	 margin-top:15px;
+             margin-right:20px;
+        }
+        .fa-bars{
+        	 margin-top:15px;
+        	 margin-left:10px;
+        }
+        .img{
+            border-radius:200px;
+            margin-left:-40px;        
+        }
+        span{
+        	margin-left:15px;
+        	 color: white;
+        	 position:absolute;
+        	 width:120px;
+            }
+        h6{
+           margin-left:10px;
+         }
+        .search{
+        	  margin-left:-35px;
+        	  width:200px;
+        	  height:35px;
+        	  background-color:black;
+            }
+        .fa-magnifying-glass{
+        	color:whitesmoke;
+        	position:absolute;
+        	margin-left:135px;
+        	margin-top:10px;
+            }
+        select{
+        	 width:219px;
+        	 height:35px;
+        	 margin-left:-46px;
+        	 color:white;
+                }
+        .main{
+        	color:gray;
+        	margin-left:-40px;
+        	background-color:black;
+        	width:214px;
+        	 height:35px;
+        	 margin-top:-25px;
+           }
+        .fa-gauge{
+        	height:20px;
+        	width:20px;
+            }
+        .fa-circle{
+        	  margin-right:5px;
+        	  background-color:darkgreen;
+        	  border-radius:100px;
+                 }
+        .fa-gauge{
+        	    position:absolute;
+               color:white;
+               margin-top:35px;
+               margin-left:-30px;
+                 }
+        .dashboard1{
+        	       margin-top:10px;
+        	      padding-left:35px;
+        	      height:45px;
+        	   background-color:#3C3635;
+                }
+        .layout1,.layout2,.layout3,.layout4,.layout5,.layout6,.layout7{
+        	   color:white;
+        	   border:1px solid black;
+        	   height:50px;
+        	   width:213px;
+        	   margin-left:-41px;
+        	   margin-top:-10px;
+        	   padding-left:35px;
+        	   padding-top:10px;
+        	   background-color:#3C3635;
+        	}
+        .fa-table-cells,.fa-chart-pie,.fa-laptop,.fa-calendar-days,.fa-file{
+        	color:white;
+        	position:absolute;
+        	margin-top:15px;
+        	margin-left:-30px;
+        }
+        .arrow{
+        	   margin-left:110px;
+        	   margin-top:5px;
+             }
+        .ularrow{
+        	   margin-left:75px;
+             }
+        .lay{
+        	  background-color:skyblue;
+        	  margin-left:60px;
+        	  height:19px;
+        	  width:15px;
+            }
+        .cal{
+        	  background-color:red;
+        	  margin-left:90px;
+        	  height:19px;
+        	  width:15px;
+            }
+        .wid{
+        	  background-color:green;
+        	  margin-left:90px;
+        	  height:19px;
+        	  width:40px;
+            }
+        .mess{
+        	  background-color:green;
+        	  position:absolute;
+        	  margin-left:780px;
+        	  height:15px;
+        	  width:15px;
+        	  margin-top:5px;
+        }
+        .bell{
+        	  background-color:orange;
+        	  position:absolute;
+        	  margin-left:820px;
+        	  height:15px;
+        	  width:15px;
+        	  margin-top:5px;
+        }
+        .awesome{
+        	  background-color:red;
+        	  position:absolute;
+        	  margin-left:870px;
+        	  height:15px;
+        	  width:15px;
+        	  margin-top:5px;
+              }
+        .div{
+        	  height:90px;
+        	  border:1px solid black;
+        	  width:170px;
+        	  margin-left:100px;
+            }
+        .box1{
+        	 background-color:skyblue;
+        	 height:88px;
+        	 width:85px;
+        	 margin-left:-15px;
+              }
+        .box2{
+        	 background-color:red;
+        	 height:88px;
+        	 width:85px;
+        	 margin-left:-15px;
+              }
+        .box3{
+        	 background-color:green;
+        	 height:88px;
+        	 width:85px;
+        	 margin-left:-15px;
+              }
+        .box4{
+        	 background-color:ye;
+        	 height:88px;
+        	 width:85px;
+        	 margin-left:-15px;
+              }
+        .home{
+        	background-color:whitesmoke;
+             }
+        .fa-gear{
+        	color:white;
+        	font-size:35px;
+          }
+        .fa-google{
+            color:white;
+            font-size:30px;
+        }
+        .fa-plus{
+        	font-size:15px;
+        }
+        .fa-cart-shopping{
+            color:white;
+            font-size:30px;
+        }
+        .name{
+             margin-right:-80px;
+             margin-top:-2px;
+        }
+        .per{
+           margin-right:-80px;
+             margin-top:20px;
+        }
+	</style>
+</head>
+<body>
+<div class="row">
+	<div class="col-md-2 navbar-inverse">
+		<div class="navbar admin" align="center">AdminLTE</div>
+		<ul class="navbar">
+			<li><a class="navbar" href="#"><img src="../images/images1/profile.jpg" class="img" id="img" height="50px" width="50px"><span>Alexander Pierce<h6><i class="fa-regular fa-circle"></i>online</h6></span></a></li>
+			<li class="navbar"><i class="fa-solid fa-magnifying-glass"></i><input type="textarea" placeholder="search..." class="search"></li>
+		    <li class="main">Main Navigation</li>
+			<li class="navbar"><a href="#"><i class="fa-solid fa-gauge"></i><select class="navbar-inverse dashboard1"><option>Dashboard</option><option>Dashboard v1</option><option>Dashboard v2</option></select></a></li>
+		    <li class="navbar"><a href="#"><i class="fa-solid fa-file"></i><p class="layout1">Layout Options<label align="center" class="lay">4</label></p></a></li>
+		    <li class="navbar"><a href="#"><i class="fa-solid fa-table-cells"></i><p class="layout2">Widgts<label align="center" class="wid">APW</label></p></a></li>
+		    <li class="navbar"><a href="#"><i class="fa-solid fa-chart-pie"></i><p class="layout3">Charts<i class="fa-solid fa-angle-left arrow"></i></p></a></li>
+		    <li class="navbar"><a href="#"><i class="fa-sharp fa-solid fa-laptop"></i><p class="layout4">Ul Elements<i class="fa-solid fa-angle-left ularrow"></i></p></a></li>
+		    <li class="navbar"><a href="#"><i class="fa-solid fa-file"></i></i><p class="layout5">Forms<i class="fa-solid fa-angle-left arrow"></i></p></a></li>
+		    <li class="navbar"><a href="#"><i class="fa-solid fa-table-cells"></i><p class="layout6">Tables<i class="fa-solid fa-angle-left arrow"></i></p></a></li>
+		    <li class="navbar"><a href="#"><i class="fa-solid fa-calendar-days"></i><p class="layout7">Calender<label align="center" class="cal">3</label></p></a></li>
+		</ul>
+	</div>
+	
+	<div class="col-md-10 home">
+		<div class="navbar dashboard">
+		    <i class="fa-sharp fa-solid fa-share-nodes"></i>
+            <p class="name">Alexander Pierce</p>
+            <img src="../images/images1/profile.jpg" class="img-circle" height="30px" width="30px">
+            <i class="fa-solid fa-bars"></i>
+            <label align="center" class="awesome">9</label><i class="fa-brands fa-font-awesome"></i>
+            <label align="center" class="bell">11</label><i class="fa-solid fa-bell"></i>
+		    <label align="center" class="mess">4</label><i class="fa-regular fa-envelope"></i>
+	    </div>
+		<h1>Dashboard&nbsp;&nbsp;<b>version 2.0</b></h1>
+		<div>
+		    <div class="col-md-3 div">
+		    	<div class="box1">
+                    <div class="name">CPU TRA...</div>
+                    <b class="per">90%</b>
+		    	    <i class="fa-sharp fa-solid fa-gear"></i>
+
+		    	</div>
+		    	
+		    </div>
+		    <div class="col-md-3 div">
+		    	<div class="box2">
+		    		<i class="fa-brands fa-google"><i class="fa-solid fa-plus"></i></i>
+		    	</div>
+		    	<div></div>
+		    </div>
+		    <div class="col-md-3 div">
+		    	<div class="box3">
+		    		<i class="fa-solid fa-cart-shopping"></i>
+		    	</div>
+		    	<div></div>
+		    </div>
+		    <div class="col-md-3 div">
+		    	<div class="col-md-6">
+		    		<i class="box4"></i>
+		    	</div>
+		    	<div></div>
+		    </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

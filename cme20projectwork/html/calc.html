@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>caculator</title>
+</head>
+<body>
+<input type="tel" id="i1"><br><br>
+<input type="tel" id="i2"><br><br>
+<button onclick="add()">add</button>
+<h1>output:<p id="out"></p></h1>
+<script type="text/javascript">
+	function add()
+	{
+		var one=document.getElementById("i1").value;
+	    var two=document.getElementById("i2").value;
+	    var output=parseInt(one)+parseInt(two);
+        document.getElementById("out").innerHTML=output;
+    }
+</script>
+</body>
+</html>

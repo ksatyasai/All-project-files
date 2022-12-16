@@ -1,0 +1,61 @@
+step:1-open any web browser and search "AWS console login" and click on first link.
+step:2-And click on aws management console.
+step:3-Now click on the create aws account.
+step:4-Then it redirect to login page,
+     1:verify email for otp.
+     2:password and conform password and select business or normal
+      then full name,phone no,address,city,state,postal code
+    3:then payment 
+the service we can using is "EC2-elastic cloud computing"
+
+
+
+//---------linux commands in window powershell------//
+cd:-change directry
+mkdir:-make or create directry
+ls:-where we are in the pc or displaying how many folders.
+touch (or) vim:-create a file 
+in windows (New-item):-to create a file 
+set-content:-to set a text or paragraphs to that file.
+get-content:-to display the content in command line.
+invoke-expression:it opens the file in its folders.
+
+
+
+//---------linux commands------//
+sudo su:-   su-super user
+sudo systemctl start httpd:- used to start the website
+sudo yum update to update the vm
+sudo yum install(software name)to install the software
+mkdir:-  to create a directory/folder
+touch:-   to create a empty file
+vi (file name):- to edit a file
+cat:-   to view the content of a file
+cd:-  change directory
+cd .. -to come back(one step)
+ls:-  list what are the files&directorys  
+ls -l:-  long list
+
+After login into vi editor
+
+* click on i
+* after clicking on i you will be enter into insert mode
+* then you can enter your content.
+* click on 'esc' key and press shift+:wq!
+  w=save
+  q=quit
+  !=come out from the vi editor...
+
+pwd:-  present working directory
+
+
+//-------github installizing process---------//
+
+1.install the git in your windows and click next and next and then install
+* open a github account in browser and click on "+" symbol and click create repositary.
+* now enter the repositary name and click on create repositary option.
+* now it displays the repositarys in your profile click onit 
+ 
+
+git --verson command
+git clone <link>:- 

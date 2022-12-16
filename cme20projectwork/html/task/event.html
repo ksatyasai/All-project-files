@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button id="display">display</button>
+	<button id="clear">clear</button>
+
+	<span id="fruits"></span>	
+	<script type="text/javascript">
+		let fruitsList=['<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxi9OQCx7vIPQaazH9CMAQHf1AiWcd-tReOQ&usqp=CAU"><span>kiwi</span>',]
+		let names=["kiwi"]
+		let display=document.getElementById('display');
+		let fruits=document.getElementById('fruits');
+		let clear=document.getElementById('clear');
+		display.addEventListener("click",(e)=>{
+				fruits.innerHTML+=fruitsList[0];
+				})
+		clear.addEventListener("click",(e)=>{
+				fruits.innerHTML=""	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		.ul{
+			list-style-type:none;
+		}
+		.img{
+			 height:100px;
+			 width:105px;
+			 margin-left:-50px;
+		}
+		.set,.fa-droplet,.fa-box,.fa-window-restore,.fa-desktop,.fa-shield,.fa-envelope{
+			 font-size:20px;
+
+		}
+		.button1{
+			   margin-left:-30px;
+			   background-color: black;
+			   height:60px;
+			   width:70px;
+			   color:white;
+		}
+		.button2,.button3,.button4,.button5,.button6,.button7{
+			   margin-left:-30px;
+			   height:60px;
+			   width:70px;
+			   color:gray;
+			   margin-top:10px;
+		}
+		.menu{
+			  height:100px;
+			  widows:100%;
+			  margin-left:-15px;
+			  background-color:white;
+		}
+		.jumbotron{
+			   height:890px;
+			   margin-left:-15px;
+		}
+		.ul1{
+			 list-style-type:none;
+			 display:inline-flex;
+			 margin-top:20px;
+		}
+		.li1{
+			 margin-left:0px;
+		}
+		.li2{
+			 margin-left:30px;
+		}
+		.dash{
+			 border:none;
+			 height:35px;
+			 color:DodgerBlue; 
+			 width:100px;
+			 border-radius:5px;
+			 margin-top:-7px;			
+		}
+		.button{
+			 border:none;
+			 background-color:white;
+		}
+		.line{
+			margin-top:-5px;
+			margin-top:3px;
+		}
+		.dash1{
+			   margin-left:40px;
+			   font-size:17px;
+			   position:absolute;
+			   margin-top:-10px;
+		}
+		.para{
+			  height:22px;
+			  width:0.1px;
+			  border:1px solid gray;
+			  margin-left:150px;
+			  margin-top:-12px;
+		}
+		.para1{
+			   margin-top:-35px;
+			   margin-left:165px;
+		}
+		.add{
+			 border:none;
+			 border-radius:2px;
+			 color:RoyalBlue;
+			 margin-left:10px;
+			 background-color:AliceBlue;
+			 height:25px;
+		}
+		.symbol{
+			    list-style-type:none;
+			    float:right;
+			    display:inline-flex;
+			    margin-top:-85px;
+		}
+		.sym{
+			margin-right:30px;
+		}
+		.but{
+			 border:none;
+			 background-color:white;
+			 font-size:18px;
+		}
+		.dollar{
+			    background-color:LightBlue;
+			    border:none;
+			    font-size:17px;
+			    color:DeepSkyBlue;
+		}
+		.down{
+			    list-style-type:none;
+			    float:right;
+			    display:inline-flex;
+			    margin-top:-30px;
+		}
+		.down1{
+			   margin-right:40px;
+		}
+		.down2{
+			   border:none;
+			   background-color:white;
+		}
+		.down3{
+			   height:25px;
+			   width:120px;
+			   margin-top:-3px;
+			   border:none;
+			   border-radius:5px;
+		}
+		.date{
+			  color:DodgerBlue;
+		}
+		.down5{
+			   margin-right:20px;
+		}
+		.down4{
+			   border:none;
+			   background-color:white;
+			   font-size:20px;
+			   margin-top:-5px;
+			   color:DeepSkyBlue;
+			   margin-right:25px;
+		}
+		.down6{
+			  margin-right:30px;
+		}
+		.sale{
+			  height:400px;
+			  width:370px;
+			  border-radius:10px;
+			  background-color:white;	  
+              margin-left:50px;
+			  margin-top:-20px;
+		}
+		.sale2,.sale1{
+			  height:400px;
+			  width:370px;
+			  background-color:white;
+			  margin-left:30px;
+			  margin-top:-20px;
+			  border-radius:10px;
+		}
+		.market{
+			  height:400px;
+			  width:370px;
+			  border-radius:10px;
+			  background-color:white;
+			  margin-left:50px;
+			  margin-top:35px;
+		}
+        .market1{
+			  height:400px;
+			  width:770px;
+			  border-radius:10px;
+			  background-color:white;
+			  margin-left:32px;
+			  margin-top:35px;
+		}
+		.img1{
+			  height:200px;
+			  width:370px;
+			  border-radius:10px;
+			  margin-left:-15px;
+		}
+		.sub1{
+			  height:105px;
+			  width:130px;
+			  float:left;
+			  margin-left:25px;
+			  margin-top:-50px;
+			  position:absolute;
+			  border-radius:10px;
+		}
+		.sub2{
+		   	  position: absolute;
+			  height:105px;
+			  width:130px;
+			  margin-top:-50px;
+			  margin-left:190px;
+			  border-radius:10px;
+		}
+		.sub3{
+			  height:105px;
+			  width:130px;
+			  margin-top:70px;
+			  float:left;
+			  margin-left:25px;
+			  border-radius:10px;
+		}
+		.sub4{
+			  height:105px;
+			  width:130px;
+			  float:right;
+			  margin-right:20px;
+			  margin-top:70px;
+			  border-radius:10px;
+		}
+		.para2{
+			   position:absolute;
+			   padding:20px;
+			   color:white;
+		}
+		.export{
+			    position:absolute;
+			    margin-left:250px;
+			    margin-top:25px;
+			    height:25px;
+			    border-radius:5px;
+			    background-color:skyblue;
+			    color:white;
+		}
+		.fa-signal{
+			       color:blue;
+			       font-size:22px;
+			       margin-left:20px;
+			       margin-top:-20px;
+			       position:absolute;
+		}
+		.p1,.p2,.p3,.p4{
+			 position:absolute;
+			 margin-top:15px;
+			 font-size:15px;
+			 margin-left:10px;
+		}
+		.fa-user-plus{
+			       color:orange;
+			       font-size:22px;
+			       margin-left:20px;
+			       margin-top:-20px;
+			       position:absolute;
+		}
+		.fa-envelope-open-text{
+			       color:green;
+			       font-size:22px;
+			       margin-left:20px;
+			       margin-top:-20px;
+			       position:absolute;
+		}
+		.fa-diamond{
+			       color:red;
+			       font-size:22px;
+			       margin-left:20px;
+			       margin-top:-25px;
+			       position:absolute;
+		}
+		.img2{
+			  height:250px;
+			  width:370px;
+			  border-radius:10px;
+			  margin-left:-15px;
+		}
+		.img3{
+			  height:120px;
+			  width:330px;
+			  margin-top:50px;
+			  border-radius:10px;
+			  margin-left:10px;
+		}
+		.para3{
+			   position:absolute;
+			   margin-left:10px;
+			   margin-top:15px;
+			   font-size:18px;
+		}
+		.score{
+			   position:absolute;
+			   margin-left:10px;
+			   margin-top:45px;
+			   color:gray;
+			   font-size:11px;
+		}
+		.trends{
+			   position:absolute;
+			   margin-left:10px;
+			   margin-top:15px;
+			   font-size:18px;
+		}
+		.fa-bag-shopping{
+			       height:40px;
+			       width:40px;
+			       padding:12px;
+			       border:none;
+			       border-radius:5px;
+			       background-color:PowderBlue;
+			       color:DeepSkyBlue;
+			       margin-left:20px;
+			       margin-top:10px;
+			       float:left; 
+		}
+		.rate{
+			  font-size:19px;
+			  margin-top:10px;
+			  position:absolute;
+			  margin-left:10px;
+		}
+		.author{
+			    font-size:12px;
+			    color:gray;
+			    position:absolute;
+			    margin-top:15px;
+			    margin-left:5px;
+		}
+		.fa-lines-leaning{
+			       height:40px;
+			       width:40px;
+			       padding:12px;
+			       border:none;
+			       border-radius:5px;
+			       background-color:Aquamarine;
+			       color:green;
+			       margin-left:-40px;
+			       margin-top:60px;
+			       float:left; 
+		}
+		.rate1{
+			  font-size:19px;
+			  margin-top:60px;
+			  position:absolute;
+			  margin-left:10px;
+		}
+		.average{
+			    font-size:12px;
+			    color:gray;
+			    position:absolute;
+			    margin-top:65px;
+			    margin-left:5px;
+		}
+		.signal{
+			       height:40px;
+			       width:40px;
+			       padding:9px;
+			       border:none;
+			       border-radius:5px;
+			       background-color:lightpink;
+			       color:red;
+			       margin-left:130px;
+			       margin-top:-30px; 
+		}
+		.rate2{
+			  font-size:19px;
+			  margin-top:-30px;
+			  position:absolute;
+			  margin-left:180px;
+		}
+		.commision{
+			    font-size:12px;
+			    color:gray;
+			    position:absolute;
+			    margin-top:-25px;
+			    margin-left:4px;
+		}
+		.fa-square{
+			       height:40px;
+			       width:40px;
+			       padding:11px;
+			       border:none;
+			       border-radius:5px;
+			       background-color:LightBlue;
+			       color:MediumPurple;
+			       font-size:20px;
+			       margin-left:190px;
+			       margin-top:20px;
+			       float:left; 
+		}
+		.rate3{
+			  font-size:19px;
+			  margin-top:18px;
+			  position:absolute;
+			  margin-left:10px;
+		}
+		.time{
+			    font-size:12px;
+			    color:gray;
+			    position:absolute;
+			    margin-top:25px;
+			    margin-left:4px;
+		}
+		.length{
+			    height:990px;
+
+		}
+		.fa-p{
+			  height:40px;
+			  width:40px;
+			  padding:13px;
+			  border:none;
+		      border-radius:5px;
+			  background-color:AliceBlue;
+			  color:red;
+			  font-size:20px;
+		}
+		.fa-paper-plane{
+			  height:40px;
+			  width:40px;
+			  padding:9px;
+			  border:none;
+		      border-radius:5px;
+			  background-color:AliceBlue;
+			  color:Cyan;
+			  margin-top:30px;
+			  font-size:20px;
+		}
+		.fa-puzzle-piece{
+			  height:40px;
+			  width:40px;
+			  padding:9px;
+			  border:none;
+		      border-radius:5px;
+			  background-color:AliceBlue;
+			  color:green;
+			  margin-top:30px;
+			  font-size:20px;
+		}
+		.top1{
+			    margin-top:px;
+			    font-size:15px;
+			    margin-left:7px;
+			    position:absolute;
+		}
+		.top2{
+			    margin-top:30px;
+			    font-size:15px;
+			    margin-left:7px;
+			    position:absolute;
+		}
+		.top3{
+			    margin-top:30px;
+			    font-size:15px;
+			    margin-left:7px;
+			    position:absolute;
+		}
+		.most1{
+			   font-size:12px;
+			   color:gray;
+			   margin-top:25px;
+			   margin-left:10px;
+			   position:absolute;
+		}
+		.most2{
+			   font-size:12px;
+			   color:gray;
+			   margin-top:55px;
+			   margin-left:10px;
+			   position:absolute;
+		}
+		.most3{
+			   font-size:12px;
+			   color:gray;
+			   margin-top:55px;
+			   margin-left:10px;
+			   position:absolute;
+		}
+		.trend1{
+			    border:none;
+			    border-radius:5px;
+			    height:30px;
+			    width:45px;
+			    background-color:AliceBlue;
+			    font-size:14px;
+			    padding:6px;
+			    margin-left:240px;
+			    margin-top:5px;
+			    position:absolute;
+		}
+		.fa-circle{
+			       position:absolute;
+			       font-size:5px;
+			       color:gray;
+			       margin-left:320px;
+			       margin-top:30px;
+		}
+		.circle1{
+		         position:absolute;
+		        font-size:5px;
+			    color:gray;
+			    margin-left:310px;
+			    margin-top:30px;
+		}
+		.trend2{
+			    border:none;
+			    border-radius:5px;
+			    height:30px;
+			    width:50px;
+			    background-color:AliceBlue;
+			    font-size:14px;
+			    padding:6px;
+			    margin-left:235px;
+			    margin-top:35px;
+			    position:absolute;
+		}
+		.trend3{
+			    border:none;
+			    border-radius:5px;
+			    height:30px;
+			    width:55px;
+			    background-color:AliceBlue;
+			    font-size:14px;
+			    padding:6px;
+			    margin-left:232px;
+			    margin-top:35px;
+			    position:absolute;
+		}
+		.leader{
+			    font-size:17px;
+			    position:absolute;
+			    margin-left:15px;
+			    margin-top:15px;
+		}
+		.pic11{
+			  height:60px;
+			  width:100px;
+			  margin-left:15px;
+			  margin-top:60px;
+			  border-radius:10px;
+		}
+		.pic1{
+			  height:60px;
+			  width:100px;
+			  margin-left:15px;
+			  margin-top:20px;
+			  border-radius:10px;
+		}
+		.cup{
+			 margin-left:20px;
+			 margin-top:65px;
+			 position:absolute;
+		}
+		.cup1{
+			 margin-left:20px;
+			 margin-top:25px;
+			 position:absolute;
+		}
+		.types{ 
+			   color:gray;
+			   font-size:12px;
+			   position:absolute;
+			   margin-left:20px;
+			   margin-top:85px;
+		     }
+		.types1{ 
+			   color:gray;
+			   font-size:12px;
+			   position:absolute;
+			   margin-left:20px;
+			   margin-top:45px;
+		     }
+		.color{
+			   color:blueviolet;
+		}
+		.by{
+			position:absolute;
+			font-size:12px;
+			color:gray;
+			margin-left:20px;
+			margin-top:105px;
+		}
+		.by1{
+			position:absolute;
+			font-size:12px;
+			color:gray;
+			margin-left:20px;
+			margin-top:65px;
+		}
+		.amount{
+			    margin-left:160px;
+			    position:absolute;
+			    margin-top:70px;
+			    font-size:18px;
+		}
+		.amount1{
+			    margin-left:160px;
+			    margin-top:20px;
+			    position:absolute;
+			    margin-top:35px;
+			    font-size:18px;
+		}
+		.s{
+		   position:absolute;
+		   color:gray;
+		   margin-left:180px;
+		   font-size:13px;
+		   margin-top:95px;
+		}
+		.sa{
+		   position:absolute;
+		   color:gray;
+		   margin-left:180px;
+		   font-size:13px;
+		   margin-top:60px;
+		}
+		.arrival{
+			     font-size:17px;
+			     margin-top:10px;
+			     position:absolute;
+		}
+		.more{
+			  font-size:12px;
+			  color:gray;
+			  margin-top:40px;
+			  position:absolute;
+		}
+		.but2{
+			 height:35px;
+			 width:180px;
+			 border-radius:5px;
+			 color:white;
+			 background-color:darkcyan;
+			 margin-left:500px;
+			 margin-top:25px;
+			 position:absolute;
+		}
+		.plus{
+			  font-size:15px;
+			  color:white;
+			  margin-top:5px;
+			  margin-left:-20px;
+			  position:absolute;
+		}
+		table{
+			  margin-top:100px;
+			  position:absolute;
+		}
+		.mg{
+			height:30px;
+			width:20px;
+			
+		}
+		.mg1{
+			 height:50px;
+			 width:30px;
+			 background-color:gray;
+			 position: absolute;
+		}
+		
+	</style>
+</head>
+<body>
+<!-- <div class="jumbotron"></div> -->
+<div class="row">
+	<div class="col-lg-1 navbar-inverse">
+		<ul class="navbar ul">
+			<li class="navbar"><img src="../images/images1/logo1.jpg" class="img"></li>
+			<li class="navbar"><button class="button1 navbar-inverse"><i class="fa-sharp fa-solid fa-gear set"></i>Export</button></li>
+            <li class="navbar"><button class="button2 navbar-inverse"><i class="fa-regular fa-window-restore"></i>Action</button></li>
+            <li class="navbar"><button class="button3 navbar-inverse"><i class="fa-solid fa-box"></i>Repoorts</button></li>
+            <li class="navbar"><button class="button4 navbar-inverse"><i class="fa-solid fa-droplet"></i>Config</button></li>
+            <li class="navbar"><button class="button5 navbar-inverse"><i class="fa-solid fa-desktop"></i>Console</button></li>
+            <li class="navbar"><button class="button6 navbar-inverse"><i class="fa-sharp fa-solid fa-shield"></i>System</button></li>
+            <li class="navbar"><button class="button7 navbar-inverse"><i class="fa-solid fa-envelope"></i><br>Logs</button></li>
+            <li class="navbar"></li><li class="navbar"></li><li class="navbar"></li>
+		</ul>
+	</div>
+	<div class="col-lg-11 length">
+		<div class="menu">
+			<ul class="ul1">
+				<li class="li1"><button class="dash" align="center">Dashboard</button> </li>
+				<li class="li2"><button class="button">Components</button></li>
+				<li class="li2"><button class="button">Apps</button></li>
+				<li class="li2"><button class="button">Crud</button></li>
+				<li class="li2"><button class="button">Pages</button></li>
+			</ul>
+			<hr class="line">
+			<b class="dash1">Dashboard</b>
+			<p class="para"></p>
+			<p class="para1">#XRS-45670<button class="add">Add New</button></p>
+			<ul class="symbol">
+				<li class="sym"><button class="but"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+				<li class="sym"><button class="but"><i class="fa-solid fa-bell"></i></button></li>
+				<li class="sym"><button class="but"><i class="fa-solid fa-gear"></i></button></li>
+				<li class="sym"><button class="but"><i class="fa-solid fa-cart-shopping"></i></button></li>
+				<li class="sym"><button class="but"><i class="fa-solid fa-paste"></i></button></li>
+				<li class="sym"><button class="but"><i class="fa-brands fa-font-awesome"></i></button></li>
+				<li class="sym"><button class="dollar"><i class="fa-solid fa-dollar-sign"></i></button></li>
+			</ul>
+			<ul class="down">
+				<li class="down1"><button class="down2">Today</button></li>
+				<li class="down1"><button class="down2">Month</button></li>
+				<li class="down6"><button class="down2">Year</button></li>
+				<li class="down5"><button class="down3">Today:<b class="date">oct 26</b></button></li>
+				<li><button class="down4"><i class="fa-sharp fa-solid fa-file-excel"></i></button></li>
+			</ul>
+		</div>
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-lg-4 sale">
+					<p class="para2">sales stat</p>
+					<select class="export">
+						<option>Export</option>
+					</select>
+					<img src="../images/images1/graph.jpg" class="img1">
+					<div class="sub1 jumbotron"><i class="fa-solid fa-signal"></i><span class="p1">Weekly Sales</span></div>
+					<div class="sub2 jumbotron"><i class="fa-solid fa-user-plus"></i><span class="p2">New users</span></div>
+					<div class="sub3 jumbotron"><i class="fa-solid fa-diamond"></i><span class="p3">Item Orders</span></div>
+					<div class="sub4 jumbotron"><i class="fa-solid fa-envelope-open-text"></i><span class="p4">Bug Reports</span></div>
+				</div>
+			    <div class="col-lg-4 sale1">
+			    	<b class="para3">Weekly Sales Starts</b>
+			    	<b class="score">890,344 Sales</b>
+			    	<img src="../images/images1/circle.jpg" class="img2">
+			    	<i class="fa-solid fa-bag-shopping"></i><b class="rate">$2,034</b><br><span class="author">Author Sales</span>
+			    	<i class="fa-solid fa-lines-leaning"></i><b class="rate1">$49</b><br><span class="average">Average Bid</span>
+			    	<i class="fa-solid fa-signal signal"></i><b class="rate2">$706</b><br><span class="commision">commision</span>
+			    	<i class="fa-solid fa-square"></i><b class="rate3">$5.8M</b><br><span class="time">All Time Sales</span>
+			    </div>
+			    <div class="col-lg-4 sale2">
+			    	<b class="trends">Trends</b><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle circle1"></i>
+			    	<img src="../images/images1/graph1.jpg" class="img3">
+			    	<i class="fa-solid fa-p"></i><b class="top1">Top Authors</b><span class="most1">Most Successful Sandra Trepp</span><span class="trend1">+82$</span><br>
+			    	<i class="fa-solid fa-paper-plane"></i><b class="top2">Top Authors</b><span class="most2">Most Successful PitStop Emails</span><span class="trend2"></span><span class="trend2">+280$</span><br>
+			    	<i class="fa-solid fa-puzzle-piece"></i><b class="top3">Top Authors</b><span class="most3">Most Successful KT.com</span><span class="trend3"></span><span class="trend3">+4500$</span>
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 market">
+					<b class="leader">Market Leaders</b><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle circle1"></i>
+					<img src="../images/images1/1.jpg" class="pic11"><b class="cup">Cup & Green</b><span class="types">Study the types</span><span class="by">By:<b class="color">CoreAd</b></span><b class="amount">24,900</b><b class="s">Sales</b><br>
+					<img src="../images/images1/2.jpg" class="pic1"><b class="cup1">Yellow</b><span class="types1">Study the types</span><span class="by1">By:<b class="color">KeenThemes</b></span><b class="amount1">70,380</b><b class="sa">Sales</b><br>
+					<img src="../images/images1/3.jpg" class="pic1"><b class="cup1">Nike & Blue</b><span class="types1">Study the types</span><span class="by1">By:<b class="color">Invision Inc.</b></span><b class="amount1">7,200</b><b class="sa">Sales</b><br>
+					<img src="../images/images1/4.jpg" class="pic1"><b class="cup1">Red Boots</b><span class="types1">Study the types</span><span class="by1">By:<b class="color">Figma Studio</b></span><b class="amount1">36,450</b><b class="sa">Sales</b>
+				</div>
+				<div class="col-lg-8 market1">
+					<b class="arrival">New Arrivals</b><button class="but2"><i class="fa-solid fa-user-plus plus"></i>&nbsp&nbsp&nbspNew member</button>
+					<span class="more">More than 400+ new members</span>
+					<table class="table">
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Authors</td>
+							<td>Company</td>
+							<td>Progress</td>
+							<td>Actions</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td><p class="mg1"><!-- <img src="../images/images1/11.jpg" class="mg"> --></p><b class="brad">Brad Simmons</b><br><span>HTML,JS,ReactJS</span></td>
+							<td><b>Intertico</b><br><span>Web,UI/UX Design</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

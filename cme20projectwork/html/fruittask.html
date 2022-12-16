@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FRUITS</title>
+</head>
+<body>
+     <h1>EVENT HANDLERS</h1>
+	<button onclick="display2()">DISPLAY FRUITS USING LOOP</button> 
+
+	<button onclick="display() " >DISPLAY FRUITS</button> 
+
+
+		<button onclick="display1()"  >CLEAR FRUITS</button>
+		<p id="fruit1"></p>
+			<span id="fruit"></span>
+			 
+				
+			
+
+		<script type="text/javascript">
+			function display()
+			{
+				document.getElementById('fruit').innerHTML+=
+				"apple<img src=../images/images1/apple.jpg style= height:100px;width:100px;> "+"grapes<img src=../images/images1/grapes.jpg style= height:100px;width:100px;>" ;
+			}
+			function display1()
+			{
+			document.getElementById('fruit').innerHTML="NO STOCK";	
+			}
+
+             function display2()
+             {
+                 var fruits=["apple","grapes"];
+                 for (var i = 0; i <= fruits.length; i++) {
+                 	document.getElementById('fruit').innerHTML+=
+                 	"<div style = width:150px;float:'left'>"
+                 }
+			}
+		</script>
+
+</body>
+</html>

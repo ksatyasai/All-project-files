@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		input{
+			  height:35px;
+		     }
+		.left{
+			 margin-top:100px;
+			 text-align:center;
+		     }
+		.fname,.lname{
+			          width:43%;
+			          text-align:center;
+			         }
+		.confirmpsw,.psd{
+			             margin-top:20px;
+			             text-align:center;
+			             width:43%;
+		                }
+		.email,.phoneno{
+			            margin-top:20px;
+			            text-align:center;
+			            width:500px;
+		               }
+		.job{
+			 margin-top:40px;
+			 width:500px;
+			 text-align:center;
+			 height:35px;
+		    }
+		.account{
+			     background-color:DodgerBlue;
+			     color:white;
+			     width:500px;
+			     margin-top:20px;
+			     height:35px;
+			     border-radius:5px;
+			     border:1px solid white;
+		        }
+		.facebook{
+			      background-color:MidnightBlue;
+			      color:white;
+			      width:500px;
+			      margin-top:10px;
+			      height:35px;
+			      border-radius:5px;
+			      border:1px solid white;
+		         }
+		.twitter{
+			     background-color:skyblue;
+			     color:white;
+			     width:500px;
+			     margin-top:10px;
+			     height:35px;
+			     border-radius:5px;
+			     border:1px solid white;
+		        }
+		.div2{
+			  margin-top:50px;
+		     }
+		.register{
+			      margin-top:20px;
+		         }
+		.or{
+			margin-top:10px;
+			margin-left:250px;
+			position:absolute;
+		   }
+	    .fa-user{
+	             padding:10px;
+		         position:absolute;
+		        }
+		.fa-square-phone,.fa-lock,.fa-envelope{
+		                                       margin-top:20px;
+		                                       padding:10px;
+		                                       position:absolute;
+		                                       }
+		.fa-black-tie{
+		              margin-top:40px;
+		              padding:10px;
+		              position:absolute;
+		             }
+		.fa-square-facebook{
+			                background-color:MidnightBlue;
+		                   }
+	    .fa-facebook-f,.fa-twitter{
+	    	                       margin-right:10px;
+	                              }
+	</style>
+</head>
+<body>
+<b>company name</b>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 left">
+			<img src="../images/images1/img.jpg">
+			<h1>create an Account</h1>
+			<h6>Create a minimal registeration page Bootstrap 4<br><br>HTML form elements.<br><br>snippet By <u>Bootstrapious</u></h6>
+		</div>
+	    <div class="col-md-6 div2">
+	    	<i class="fa-solid fa-user"></i><input type="textarea" placeholder="First Name" class="fname">&nbsp&nbsp&nbsp&nbsp
+	    	<i class="fa-solid fa-user"></i><input type="textarea" placeholder="Last Name" class="lname"><br>
+	    	<i class="fa-solid fa-envelope"></i><input type="email" placeholder="Email Address" class="email"><br>
+	        <i class="fa-solid fa-square-phone">&nbsp&nbsp&nbsp&nbsp<select class="select"><option>+91</option></select></i><input type="tel" placeholder="phone Number" class="phoneno" maxlength="10"><br>
+	        <i class="fa-brands fa-black-tie"></i><select class="job"><option>choose your job</option><option>software</option><option>hardware</option></select><br>
+	        <i class="fa-solid fa-lock"></i><input type="Password" placeholder="Password" class="psd">&nbsp&nbsp&nbsp&nbsp
+	        <i class="fa-solid fa-lock"></i><input type="Password" placeholder="Confirm Password" class="confirmpsw"><br>
+	        <button class="account">Create your account</button>
+	        <p align="center" class="or">OR</p><hr>
+	        <button class="facebook"><i class="fa-brands fa-facebook-f"></i></i>continue with Facebook</button>
+	        <button class="twitter"><i class="fa-brands fa-twitter"></i>continue with Twitter</button>
+	        <p align="center" class="register">Already Registered ?<a href="">Login</a></p>
+	    </div>
+	</div>
+</div>
+</body>
+</html>

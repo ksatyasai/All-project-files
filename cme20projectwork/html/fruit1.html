@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EVENT HANDLER</title>
+</head>
+<body>
+	<h1>EVENT HANDLER</h1>
+	<button onclick="display()">DISPLAY DATA</button>
+	<button onclick="display1()">CLEAR DATA</button>
+	<p id="fruit"></p>
+	<script type="text/javascript">
+		var fruits=[{
+			fruit:"apple",
+			cost:90,
+			name:"apple"
+		},
+		{
+			fruit:"grapes",
+			cost:90,
+			name:"grapes"
+		}
+		];
+		function display()
+        {
+			for (var i = 0; i < fruits.length; i++) {
+				console.log(fruits[i].image);
+			document.getElementById('fruit').innerHTML+="<img src='../images/images1/"+fruits[i].name+".jpg' style='height:150px;width:150px;'>"+"<br>"+"cost="+fruits[i].cost+"<br>"+"name="+fruits[i].name+"<br>";
+			
+			}
+			
+		}
+		function display1()
+		{
+		document.getElementById('fruit').innerHTML="no stock";	
+		}
+		
+	</script>
+
+</body>
+</html>

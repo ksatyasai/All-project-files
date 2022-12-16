@@ -1,0 +1,27 @@
+.s1{
+	 background-color: yellow;
+	 width: 100%;
+	 height:100px;
+     }
+ul{
+	padding:40px;
+}
+li{
+	display: inline;
+	margin-right: 50px;
+}
+a{
+	text-decoration: none;
+}
+.s2{
+    height:300px;
+    border:1px solid black;
+   }
+.s3{
+    height:300px;
+    border:1px solid black;
+   }
+.s4	{
+    height:300px;
+    border:1px solid black;
+   }

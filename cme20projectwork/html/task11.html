@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		button{
+			   margin-left:150px;
+		}
+		img{
+		  height:200px;
+		  width:300px;
+		}
+	</style>
+</head>
+<body>
+<p id="text"><img src="../images/images1/one.jpg"></p>
+<script type="text/javascript">
+	let images=[
+	             "<img src=../images/images1/one.jpg style=height:200px;width:300px>",
+	             "<img src=../images/images1/two.jpg style=height:200px;width:300px>",
+	             "<img src=../images/images1/three.jpg style=height:200px;width:300px>",
+	             "<img src=../images/images1/four.jpg style=height:200px;width:300px>"
+	           ]
+function sum(){
+	const Time = setTimeout(add,1000);
+	      }
+	      sum();
+	          count=0; 
+	function add()
+	       {
+              	if(count<3)
+                {
+                count=count+1;
+                document.getElementById('text').innerHTML=images[count];
+                setTimeout(add,1000);
+                }
+                else
+                {
+                count=-1;
+                 sum();
+                }
+	       }
+</script>
+</body>
+</html>

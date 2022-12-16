@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		form{
+			 margin-left:50px;
+			 margin-top:50px;
+		}
+		span{
+			 margin-left:50px;
+			 font-size:12px;
+			 color:red;
+		}
+	</style>
+</head>
+<body>
+<form name="form_name" onsubmit="return validations()">
+Email:<input type="text" id="email" onkeypress="press1()" onclick="press1()"><br>
+<span id="message"></span><br>
+password:<input type="password" id="pass" onkeypress="press()"><br>
+<span id="error"></span><br>
+<button>submit</button>
+</form>
+<script type="text/javascript">
+	function validations()
+	{
+		var mail=document.getElementById('email').value;
+		var pass1=document.getElementById('pass').value;
+     if(mail=="")
+     {
+      document.getElementById('message').innerHTML="*please fill the above box";
+      return false;	
+     }
+     if(pass1 =="")
+     {
+     	document.getElementById('error').innerHTML="*please fil the above box";
+     	return false;
+     }
+	}
+	function press(){
+		var pass1=document.getElementById('pass').value;
+		 var passw= /^[A-Za-z0-9]/;
+		     for(i=0;i<10;i++)
+		     {
+		       if(pass1.match(passw))
+		       {
+		       document.getElementById('error').innerHTML='';
+		     }
+		 }
+	    }
+	function press1(){
+		var mail=document.getElementById('email').value;
+		if(mail.length==8)
+		{
+		document.getElementById('message').innerHTML='';
+	    }
+	}
+</script>
+</body>
+</html>
