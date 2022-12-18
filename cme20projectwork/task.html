@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<?php
+include insert.php;
+?>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+	<style type="text/css">
+		button
+		{
+		  width:100%;
+		  color:black;
+		  background-color:yellowgreen;
+		}
+		span{
+			 color:red;
+		}
+	</style>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="col-lg-4"></div>
+<div class="col-lg-4 bg-primary">
+	<form method="post" action="insert.php" onsubmit="return validations()">
+		<div>
+		    <h1 align="center">FORM</h1>
+		    <hr>
+		</div>
+		<div class="form-group">
+		    <p>Name :</p>
+		    <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" onclick="document.getElementById('errname').innerHTML=''" onkeypress="document.getElementById('errname').innerHTML=''">
+		    <span id="errname"></span>
+		</div>
+		<div class="form-group">
+		    <p>Rollno :</p>
+		    <input type="text" name="rollno" class="form-control" id="rollno" placeholder="Enter rollno" onclick="document.getElementById('errrollno').innerHTML=''" onkeypress="document.getElementById('errrollno').innerHTML=''">
+		    <span id="errrollno"></span>
+		</div>
+		<div class="form-group">
+		    <p>Email :</p>
+		    <input type="text" name="email" class="form-control" id="email" placeholder="Enter Email" onclick="document.getElementById('erremail').innerHTML=''" onkeypress="document.getElementById('erremail').innerHTML=''">
+		    <span id="erremail"></span>
+		</div>
+		<div class="form-group">
+		    <p>password :</p>
+		    <input type="password" name="pwd" class="form-control" id="password" placeholder="Enter password" onclick="document.getElementById('errpassword').innerHTML=''" onkeypress="document.getElementById('errpassword').innerHTML=''">
+		    <span id="errpassword"></span>
+		</div>
+		<div class="form-group">
+		    <p>phoneno :</p>
+		    <input type="tel" name="pno" class="form-control" id="phoneno" placeholder="Enter phoneno" onclick="document.getElementById('errphoneno').innerHTML=''" onkeypress="document.getElementById('errphoneno').innerHTML=''">
+		    <span id="errphoneno"></span>
+		</div>
+		<div>
+		   <p>Gender :</p>
+		    	<div class="col-lg-4">
+		    		<input type="radio" name="gender" id="male" onclick="document.getElementById('errgender').innerHTML=''"> male
+		    	</div>
+		    <div class="col-lg-4">
+		    	<input type="radio" name="gender" id="female" onclick="document.getElementById('errgender').innerHTML=''"> female
+            </div>
+        </div>
+        <div class="col-lg-12">
+        	<span id="errgender"></span>
+        </div><br><br>
+        <div class="form-group">
+		    <p>date of birth :</p>
+		    <input type="date" name="dob" id="dob" class="form-control" onclick="document.getElementById('errdob').innerHTML=''" onkeypress="document.getElementById('errdob').innerHTML=''">
+		    <span id="errdob"></span>
+		</div>
+		<div class="form-group">
+		    <p>branch :</p>
+		    <div class="col-lg-3">
+		        <input type="checkbox" name="branch" id="branch"> cme
+		    </div>
+		    <div class="col-lg-3">
+		        <input type="checkbox" name="branch" id="branch"> eee
+		    </div>
+		    <div class="col-lg-3">
+		        <input type="checkbox" name="branch" id="branch"> mech
+		    </div>
+		</div>
+		<div class="col-lg-12">
+			<span id="errbranch"></span>
+		</div><br><br>
+		<div class="col-lg-12">
+		    <button class="btn">submit</button>
+		</div>
+	</form>
+</div>
+<div class="col-lg-4"></div>
+<script type="text/javascript">
+	function validations()
+	{
+	 var name=document.getElementById('name').value;
+	 if(name=="")
+	 {
+	  document.getElementById('errname').innerHTML="* please fill the above box";
+	  return false;
+	 }	
+	 var rollno=document.getElementById('rollno').value;
+	 if(rollno=="")
+	 {
+	  document.getElementById('errrollno').innerHTML="* please fill the above box";
+	  return false;
+	 }	
+	 var email=document.getElementById('email').value;
+	 if(email=="")
+	 {
+	  document.getElementById('erremail').innerHTML="* please fill the above box";
+	  return false;
+	 }	
+	 var password=document.getElementById('password').value;
+	 if(password=="")
+	 {
+	  document.getElementById('errpassword').innerHTML="* please fill the above box";
+	  return false;
+	 }	
+	 var phoneno=document.getElementById('phoneno').value;
+	 if(phoneno=="")
+	 {
+	  document.getElementById('errphoneno').innerHTML="* please fill the above box";
+	  return false;
+	 }	
+	 var male=document.getElementById('male').checked;
+	 var female=document.getElementById('female').checked;
+	 if(male==false && female==false)
+	 {
+	  document.getElementById('errgender').innerHTML="* please fill the above box";
+	  return false;
+	 }	
+	 var dob=document.getElementById('dob').value;
+	 if(dob=="")
+	 {
+	  document.getElementById('errdob').innerHTML="* please fill the above box";
+	  return false;
+	 }
+	 // var branch=document.getElementByName('branch');
+	 // let cme=branch[0].checked;
+	 // let eee=branch[1].checked;
+	 // let mech=branch[2].checked;
+	 //  console.log(branch);
+	// if(cme == false && eee == false && mech ==false){
+		// alert("Please select courses.")
+		// return false;
+	// }
+	 // alert(cme);
+	 // if () {
+	 // alert('hi');
+	  // }
+	}
+</script>
+</body>
+</html>
